@@ -1,0 +1,47 @@
+{
+  "name": "enukeparser",
+  "version": "0.0.1",
+  "dependencies": {
+    "async": "^2.5.0",
+    "body-parser": "^1.10.1",
+    "chai-arrays": "^1.0.0",
+    "config": "^1.26.1",
+    "connect-multiparty": "^2.0.0",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "1.1.0",
+    "ejs": "^2.1.4",
+    "eventemitter3": "^2.0.3",
+    "express": "^4.11.0",
+    "express-validator": "^3.2.0",
+    "http": "0.0.0",
+    "ipware": "^1.0.0",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.4.3",
+    "underscore": "1.8.3"
+  },
+  "description": "Simple application to parse the seven-segment file.",
+  "main": "app.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node app.js",
+    "test": "mocha --timeout 10000"
+  },
+  "keywords": [
+    "todo",
+    "node.js",
+    "express",
+    "npm",
+    "localdb"
+  ],
+  "author": "Akhilesh Saini",
+  "license": "ISC",
+  "devDependencies": {
+    "ab-tool": "^0.2.0",
+    "chai": "^4.0.2",
+    "chai-http": "^3.0.0",
+    "chai-performance": "^0.1.4",
+    "gulp": "^3.9.1",
+    "mocha": "^3.4.2",
+    "siege": "^0.2.0"
+  }
+}
