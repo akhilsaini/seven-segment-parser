@@ -56,7 +56,7 @@ app.use(function (err, req, res, next) {
 var http_port = config.get('app.port');
 
 var http_server = http.createServer(app);
-http_server.listen(http_port);
+http_server.listen(process.env.PORT||http_port);
 http_server.on('error', onError);
 http_server.on('listening', onListening);
 
