@@ -1,0 +1,88 @@
+{
+	"id": "7d2cfa1d-568f-bac1-ed51-8a5644528aef",
+	"name": "EnukePostman",
+	"description": "",
+	"order": [
+		"5e7a2b5f-dfb1-1195-b431-4ee7bf8de87b",
+		"a81dfd08-517b-5789-2242-9d64ac854dd0"
+	],
+	"folders": [],
+	"timestamp": 1498594882793,
+	"owner": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "5e7a2b5f-dfb1-1195-b431-4ee7bf8de87b",
+			"headers": "",
+			"headerData": [],
+			"url": "https://stark-hollows-81884.herokuapp.com/api/service/marco-polo?from=1&to=28",
+			"queryParams": [
+				{
+					"key": "from",
+					"value": "1",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "to",
+					"value": "28",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1498737272741,
+			"name": "Marco-Polo Problem",
+			"description": "",
+			"collectionId": "7d2cfa1d-568f-bac1-ed51-8a5644528aef",
+			"responses": []
+		},
+		{
+			"id": "a81dfd08-517b-5789-2242-9d64ac854dd0",
+			"headers": "Accept-Encoding: multipart/form-data\n",
+			"headerData": [
+				{
+					"key": "Accept-Encoding",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://stark-hollows-81884.herokuapp.com/api/service/invoice-numbers",
+			"queryParams": [],
+			"preRequestScript": "",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "segmented_file",
+					"value": "input_user_story_1.txt",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1498737315535,
+			"name": "Invoice Numbers",
+			"description": "",
+			"collectionId": "7d2cfa1d-568f-bac1-ed51-8a5644528aef",
+			"responses": []
+		}
+	]
+}
