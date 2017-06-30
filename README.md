@@ -27,9 +27,8 @@
 
 ## Remotely
 
-	<p>
   The quickest way to get started with application is just go the archive directory of the repository and download both files. Now use import the postman requests json file in your postman tool and hit the api using default parameters set there. You might also need the txt file (you just downloaded) for the testing the seven-segment parser. Those postman requests will hit to the remotely deployed application on heroku.
-  	</p>
+
 
 ## Locally
 
