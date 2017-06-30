@@ -27,17 +27,23 @@
 
 ## Remotely
 
+	<p>
   The quickest way to get started with application is just go the archive directory of the repository and download both files. Now use import the postman requests json file in your postman tool and hit the api using default parameters set there. You might also need the txt file (you just downloaded) for the testing the seven-segment parser. Those postman requests will hit to the remotely deployed application on heroku.
-
+  	</p>
 
 ## Locally
 
   Follow the below menioned steps for quick starting with application locally.
 
   1. git clone https://github.com/akhilsaini/seven-segment-parser
-  2. npm start
+  2. cd seven-segment-parser
+  3. npm start
 
   Now you can check the services just by replacing the remote host <b>https://stark-hollows-81884.herokuapp.com</b> with <b>localhost:3000</b> in your postman requestst.
+
+  Note : Assuming node.js,npm working properly. recommended Node version : 6.9.4, recommended npm version : 3.10.10
+
+  Once you do the npm start command it'll automatically install the application dependency and start the application on the given port of 3000( default port).
 
 ## Test Cases
 
@@ -45,14 +51,13 @@
 
 ## Benchmarking
 
-	Benchmarking of the application is done on my local system with configuration <b>windows 64,8 GB Ram,500 GB HDD</b>. You can refer the <b>benchmark</b> directory for the same.
+	Benchmarking of the application is done on my local system with configuration <b>windows 64,8 GB Ram,500 GB HDD</b>. 
+	You can refer the <b>benchmark</b> directory for the same.
 
 	Also benchmarking can be done on your local system also assuming <b>ab</b> tool installed on your local machine.
 	To bechmark the services just run the <b>gulp</b> command.
 
-  Note : Assuming you installed node.js and npm packages also in working condition.
-
-  Once you do the npm start command it'll automatically install the application dependency and start the application on the given port of 3000( default port).
+  
 
 ## Specific Mention
 	
