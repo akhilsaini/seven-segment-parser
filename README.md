@@ -6,6 +6,7 @@
 <h2>Seven-Segment Problem</h2>
 <p>To solve this problem we need to uniquely define the each and every segment of the seven-segment,for that we have named the each segment uniquely using characters from <b>a</b> to <b>g</b>. Please refer the below image.</p>
 ![Seven-Segment Logo](https://raw.githubusercontent.com/akhilsaini/seven-segment-parser/master/logo/ss.png)
+![alt text](https://raw.githubusercontent.com/akhilsaini/seven-segment-parser/master/logo/ss.png)
 
 <p>Now to uniquely define the segments we need to give them specific numbers which we have given a,b,c,d,e,f,g respectively 1,2,4,8,16,32,64. This numbering is done just to get the hexadecimal equivalent of each and every number.</p>
 <p>Refer the below list for each and every number from 0 to 9 in seven segment display.</p>
