@@ -24,6 +24,7 @@
   "scripts": {
     "prestart": "npm install",
     "start": "node app.js",
+    "pretest": "npm install",
     "test": "mocha --timeout 10000"
   },
   "keywords": [
@@ -37,11 +38,15 @@
   "license": "ISC",
   "devDependencies": {
     "ab-tool": "^0.2.0",
+    "bench-rest": "^1.2.4",
     "chai": "^4.0.2",
     "chai-http": "^3.0.0",
     "chai-performance": "^0.1.4",
     "gulp": "^3.9.1",
+    "gulp-jscs": "^4.0.0",
+    "gulp-run": "^1.7.1",
     "mocha": "^3.4.2",
+    "run-sequence": "^1.2.2",
     "siege": "^0.2.0"
   }
 }

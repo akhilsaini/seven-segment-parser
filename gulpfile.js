@@ -1,35 +1,40 @@
 var gulp = require('gulp');
-var jscs = require('gulp-jscs');
+//var jscs = require('gulp-jscs');
 var run = require('gulp-run');
+var async = require('async');
+var runSeq = require('run-sequence');
 
 gulp.task('test-cases', function () {
-	return run('npm test').exec() 
-		.pipe(gulp.dest('output'))
-	;
+	return run('npm test').exec()
+		.pipe(gulp.dest('output'));
 });
 
+/*
+Marco-polo numbers from 1 to 28.
+*/
 gulp.task('basic-load-test', function () {
-	return run("ab -n 100 -c 10 http://localhost:8081/api/service/marco-polo?to=28").exec() // prints "Hello World\n". 
-		.pipe(gulp.dest('output'))
-	;
-});
-gulp.task('default-load-test', function () {
-	return run("ab -n 100 -c 10 http://localhost:8081/api/service/marco-polo").exec() // prints "Hello World\n". 
-		.pipe(gulp.dest('output'))
-	;
-});
-gulp.task('extensive-load-test', function () {
-	return run("ab -n 100 -c 10 http://localhost:8081/api/service/marco-polo?to=1000000").exec() // prints "Hello World\n". 
-		.pipe(gulp.dest('output'))
-	;
+	return run("ab -n 100 -c 10 http://localhost:3000/api/service/marco-polo?to=28").exec() // prints "Hello World\n". 
+		.pipe(gulp.dest('benchmark/marco-polo/basic'));
 });
 
-gulp.task('default', function () {
-	//gulp.start('hello-world');
-	//gulp.start('test-cases');
-	gulp.start('basic-load-test');
-	gulp.start('default-load-test');
-	gulp.start('extensive-load-test');
+/*
+Marco-polo numbers in default range which is 1 to 1000000.
+*/
+gulp.task('default-load-test', function () {
+	return run("ab -n 100 -c 10 http://localhost:3000/api/service/marco-polo").exec() // prints "Hello World\n". 
+		.pipe(gulp.dest('benchmark/marco-polo/default'));
+});
+
+/*
+Marco-polo numbers in from 1 to 1000000.
+*/
+gulp.task('extensive-load-test', function () {
+	return run("ab -n 100 -c 10 http://localhost:3000/api/service/marco-polo?to=1000000").exec() // prints "Hello World\n". 
+		.pipe(gulp.dest('benchmark/marco-polo/extensive'));
+});
+
+gulp.task('default', function(){
+  return runSeq('basic-load-test','default-load-test','extensive-load-test');
 });
 
 var lintFile = [
@@ -37,9 +42,9 @@ var lintFile = [
 	'app/**/*.js'
 ];
 
-gulp.task('lint', function () {
-	return gulp.src(lintFile).pipe(jscs({
-		fix: false,
-		configPath: './.jscsrc'
-	})).pipe(jscs.reporter());
-})
+// gulp.task('lint', function () {
+// 	return gulp.src(lintFile).pipe(jscs({
+// 		fix: false,
+// 		configPath: './.jscsrc'
+// 	})).pipe(jscs.reporter());
+// })

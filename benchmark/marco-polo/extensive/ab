@@ -1,0 +1,42 @@
+This is ApacheBench, Version 2.3 <$Revision: 1796539 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
+
+Benchmarking localhost (be patient).....done
+
+
+Server Software:        
+Server Hostname:        localhost
+Server Port:            3000
+
+Document Path:          /api/service/marco-polo?to=1000000
+Document Length:        7321489 bytes
+
+Concurrency Level:      10
+Time taken for tests:   23.082 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      732170500 bytes
+HTML transferred:       732148900 bytes
+Requests per second:    4.33 [#/sec] (mean)
+Time per request:       2308.210 [ms] (mean)
+Time per request:       230.821 [ms] (mean, across all concurrent requests)
+Transfer rate:          30976.83 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    0   0.4      0       1
+Processing:   769 2243 550.7   2073    3844
+Waiting:      211 1674 529.5   1812    2483
+Total:        769 2243 550.7   2073    3845
+
+Percentage of the requests served within a certain time (ms)
+  50%   2073
+  66%   2273
+  75%   2313
+  80%   2508
+  90%   3299
+  95%   3613
+  98%   3652
+  99%   3845
+ 100%   3845 (longest request)
