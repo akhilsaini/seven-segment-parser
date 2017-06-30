@@ -5,7 +5,7 @@
 <p>To solve this problem we need to check whether the numbers is divisible by the 4 and 7 if yes then we mark that number as marco-polo number,if not then we check if it's only divisible by 4 then we mark the number as marco and if it's divisible by only 7 then we mark it as polo otherwise keep the number as it is.</p>
 <h2>Seven-Segment Problem</h2>
 <p>To solve this problem we need to uniquely define the each and every segment of the seven-segment,for that we have named the each segment uniquely using characters from <b>a</b> to <b>g</b>. Please refer the below image.</p>
-![alt text](logo/ss.png)
+![alt text](https://github.com/akhilsaini/seven-segment-parser/blob/master/logo/ss.png)
 
 <p>Now to uniquely define the segments we need to give them specific numbers which we have given a,b,c,d,e,f,g respectively 1,2,4,8,16,32,64. This numbering is done just to get the hexadecimal equivalent of each and every number.</p>
 <p>Refer the below list for each and every number from 0 to 9 in seven segment display.</p>
