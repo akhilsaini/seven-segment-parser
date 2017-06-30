@@ -5,23 +5,21 @@
 <p>To solve this problem we need to check whether the numbers is divisible by the 4 and 7 if yes then we mark that number as marco-polo number,if not then we check if it's only divisible by 4 then we mark the number as marco and if it's divisible by only 7 then we mark it as polo otherwise keep the number as it is.</p>
 <h2>Seven-Segment Problem</h2>
 <p>To solve this problem we need to uniquely define the each and every segment of the seven-segment,for that we have named the each segment uniquely using characters from <b>a</b> to <b>g</b>. Please refer the below image.</p>
-![Seven-Segment Logo](https://raw.githubusercontent.com/akhilsaini/seven-segment-parser/master/logo/ss.png)
-![alt text](https://raw.githubusercontent.com/akhilsaini/seven-segment-parser/master/logo/ss.png)
+![alt text](logo/ss.png)
 
 <p>Now to uniquely define the segments we need to give them specific numbers which we have given a,b,c,d,e,f,g respectively 1,2,4,8,16,32,64. This numbering is done just to get the hexadecimal equivalent of each and every number.</p>
 <p>Refer the below list for each and every number from 0 to 9 in seven segment display.</p>
-<p>
-	63: 0, // 0x3F(a+b+c+d = 15, e+f = 48) like for all the numbers
-	6: 1, // 0x06
-	91: 2, // 0x5B
-	79: 3, // 0x4F
-	102: 4, // 0x66
-	109: 5, // 0x6D
-	125: 6, // 0x7D
-	7: 7, // 0x07
-	127: 8, // 0x7F
-	111: 9 // 0x67
-</p>
+
+<p>63: 0, // 0x3F(a+b+c+d = 15, e+f = 48) likely for all the numbers</p>
+<p>6: 1, // 0x06</p>
+<p>91: 2, // 0x5B</p>
+<p>79: 3, // 0x4F</p>
+<p>102: 4, // 0x66</p>
+<p>109: 5, // 0x6D</p>
+<p>125: 6, // 0x7D</p>
+<p>7: 7, // 0x07</p>
+<p>127: 8, // 0x7F</p>
+<p>111: 9 // 0x67</p>
 
 
 ## Quick Start Guide
